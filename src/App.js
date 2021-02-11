@@ -27,7 +27,13 @@ const App = () => {
 
   return (
     <div className='App'>
-      <img src={logo} width={150} height={150} alt='Dogecoin Logo' />
+      <img
+        className='logo'
+        src={logo}
+        width={150}
+        height={150}
+        alt='Dogecoin Logo'
+      />
       <h1 className='title'>Live Dogecoin Price</h1>
       <h5 className='subtitle'>Dogecoin To The Moon 🚀🌕</h5>
       <div className='prices-container'>
@@ -35,7 +41,7 @@ const App = () => {
         <PriceCard type='high' price={ticker.high} />
         <PriceCard type='current' price={ticker.last} />
       </div>
-      <p>
+      <p className='footer'>
         Dogecoin price updated every 10 seconds seconds from{' '}
         <a href='https://wazirx.com/'>WazirX API</a>
       </p>
